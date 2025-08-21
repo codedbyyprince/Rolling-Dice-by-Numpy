@@ -6,3 +6,5 @@ def dice_roll():
 def reverse_dice():
     return np.random.randint(-7, 0)
 
+def points(positive , negative):
+    return positive + negative
