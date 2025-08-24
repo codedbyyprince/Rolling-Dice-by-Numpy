@@ -1,0 +1,6 @@
+🎲 Dice Roller
+
+A fun little web app that lets you roll dice with a click.
+Built using Flask + NumPy and deployed on Render.
+
+🔗 Try it here: rolling-dice-by-numpy.onrender.com
