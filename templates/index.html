@@ -14,22 +14,22 @@
     </form>
     {% if result == 1 %}
        <h3>You rolled: {{ result }}</h3>
-       <img src="https://static.thenounproject.com/png/2502961-200.png" alt="" width="200">
+       <img src="{{ url_for('static', filename='01.jpeg') }}" alt="" width="300">
     {% elif result == 2 %}
         <h3>You rolled: {{ result }}</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dice-2-b.svg/800px-Dice-2-b.svg.png" alt="" width="200">
+        <img src="{{ url_for('static', filename='02.jpeg') }}" alt="" width="300">
     {% elif result == 3 %}
         <h3>You rolled: {{ result }}</h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Dice-3-b.svg" alt="" width="200">
+        <img src="{{ url_for('static', filename='03.jpeg') }}" alt="" width="300">
     {% elif result == 4 %}
             <h3>You rolled: {{ result }}</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Dice-4-b.svg/600px-Dice-4-b.svg.png" alt="" width="200">
+            <img src="{{ url_for('static', filename='04.jpeg') }}" alt="" width="300">
     {% elif result == 5 %}
             <h3>You rolled: {{ result }}</h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Dice-5-b.svg" alt="" width="200">
+            <img src="{{ url_for('static', filename='05.jpeg') }}" alt="" width="300">
     {% elif result == 6 %}
             <h3>You rolled: {{ result }}</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn9DDOH-0D-NAl4n1NIYLXdmZ9gpsvh-ekqA&s" alt="" width="200">
+            <img src="{{ url_for('static', filename='06.jpeg') }}" alt="" width="300">
     {% else %}
     <h3>No roll yet!</h3>
     {% endif %}
